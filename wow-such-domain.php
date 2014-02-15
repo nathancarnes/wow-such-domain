@@ -9,7 +9,7 @@ Author URI: http://carnesmedia.com
 */
 
 function set_domain(){
-  return $_SERVER[SERVER_NAME];
+  return "//" . $_SERVER['SERVER_NAME'];
 }
 
 add_filter("option_siteurl", "set_domain");
